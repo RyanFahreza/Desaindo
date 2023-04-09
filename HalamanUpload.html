@@ -1,0 +1,55 @@
+<!doctype html>
+
+<head>
+    <title>Halaman Upload</title>
+    <link rel="stylesheet" href="Style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+    
+<body>
+    <div class="KotakHeader">
+        <div class="dropdown">
+            <button class="dropbtn"><img src="Pengaturan.png" class="dropdown-img"></button>
+            <div class="dropdown-content">
+              <a href="HalamanUpload.html"><img src="penc.png"class="dropdown-content-img"></a>
+              <a href="Keranjang.html"><img src="Keranjang.png"class="dropdown-content-img"></a>
+              <a href="#"><img src="Belanja.png"class="dropdown-content-img"></a>
+              <a href="Login.html"><img src="LogOut.png" class="dropdown-content-img"></a>
+            </div>
+          </div>
+          <div class="ProBtn">
+            <button class="dropbtn"><img src="Profil.jpg" class="dropdown-img"></button>
+          </div>          
+    </div>
+    <div class="upload">
+        <div class="updes">UPLOAD DESAIN</div>
+        <div class="fit space">
+            <span class="fa fa-image"></span>
+            <input type="file" id="upload-file">
+        </div>
+        <script>
+            function uploadFile() {
+            var input = document.getElementById("upload-file");
+            var file = input.files[0];
+  
+            if (!file.type.startsWith('image/')) {
+            alert("Hanya gambar yang dapat di-upload.");
+            return;
+     }
+  
+  // Lakukan sesuatu dengan file yang telah di-upload, misalnya kirim ke server menggunakan AJAX
+}
+
+        </script>
+        <div class="fix space">
+            <span class="fa fa-pencil-alt"></span>
+            <input type="text" required placeholder="Deskripsi"/>
+        </div>
+        <div class="fix space">
+            <span class="fa fa-money-bill"></span>
+            <input type="text" required placeholder="Masukkan Harga Saran"/>
+        </div>
+        <div class="tomupload space">
+            <button onclick="uploadFile()">Upload</button>
+        </div>
+    </div>

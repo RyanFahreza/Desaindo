@@ -1,0 +1,89 @@
+<!doctype html>
+
+<head>
+    <title>Halaman Utama</title>
+    <link rel="stylesheet" href="Style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+    
+<body>
+    <div class="KotakHeader">
+        <div class="dropdown">
+            <button class="dropbtn"><img src="Pengaturan.png" class="dropdown-img"></button>
+            <div class="dropdown-content">
+              <a href="HalamanUpload.html"><img src="penc.png"class="dropdown-content-img"></a>
+              <a href="Keranjang.html"><img src="Keranjang.png"class="dropdown-content-img"></a>
+              <a href="#"><img src="Belanja.png"class="dropdown-content-img"></a>
+              <a href="Login.html"><img src="LogOut.png" class="dropdown-content-img"></a>
+            </div>
+          </div>
+          <div class="ProBtn">
+            <button class="dropbtn"><img src="Profil.jpg" class="dropdown-img"></button>
+          </div>          
+    </div>
+    <div class="KotakKeranjang">
+        <div class="terbaru">KERANJANG</div>
+        <div class="kotakdalam2">
+                  <div class="kotakHeader2">
+                    Nama Akun
+                  </div>
+                  <div class="kotakdalam"><img src="random.png"></div>
+                  <div class="kotakharga">
+                    Harga Saran IDR. 500.000
+                    <button class="High-btn" onclick="toggleHigh(this)">
+                    <span class="High-icon"></span>
+                    </button>
+                    <script>
+                        function toggleHigh(btn) {
+                        var icon = btn.querySelector('.High-icon');
+    
+                        btn.classList.toggle('clicked');
+    
+                        icon.classList.add('animate');
+                        setTimeout(function() {
+                        icon.classList.remove('animate');
+                        }, 500);
+                    }
+                    </script>
+                    <button class="Low-btn" onclick="toggleLow(this)">
+                        <span class="Low-icon"></span>
+                        </button>
+                        <script>
+                            function toggleLow(btn) {
+                            var icon = btn.querySelector('.Low-icon');
+        
+                            btn.classList.toggle('clicked');
+        
+                            icon.classList.add('animate');
+                            setTimeout(function() {
+                            icon.classList.remove('animate');
+                            }, 500);
+                        }
+                        </script>
+                        <button class="fit-btn" onclick="togglefit(this)">
+                            <span class="fit-icon"></span>
+                            </button>
+                            <script>
+                                function togglefit(btn) {
+                                var icon = btn.querySelector('.fit-icon');
+            
+                                btn.classList.toggle('clicked');
+            
+                                icon.classList.add('animate');
+                                setTimeout(function() {
+                                icon.classList.remove('animate');
+                                }, 500);
+                            }
+                            </script>
+                  </div>
+        </div>
+    </div>
+    <div class="kotakcatatan">
+        <h5>Catatan</h5>
+        <p>Harga saran adalah harga pendapat yang diminta oleh
+            desainer semisal produk yang didesain akan diperjual belikan
+        </p>
+        <p><img src="Higher-filled.png">Pilih ini apabila anda merasa harga harus lebih mahal</p>
+        <p><img src="Lower-filled.png">Pilih ini apabila anda merasa harga harus lebih murah</p>
+        <p><img src="Pas-filled.png">Pilih ini apabila anda merasa harga sudah pas</p>
+      </div>

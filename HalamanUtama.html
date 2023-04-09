@@ -1,0 +1,68 @@
+<!doctype html>
+
+<head>
+    <title>Halaman Utama</title>
+    <link rel="stylesheet" href="Style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+    
+<body>
+    <div class="KotakHeader">
+        <div class="dropdown">
+            <button class="dropbtn"><img src="Pengaturan.png" class="dropdown-img"></button>
+            <div class="dropdown-content">
+              <a href="HalamanUpload.html"><img src="penc.png"class="dropdown-content-img"></a>
+              <a href="Keranjang.html"><img src="Keranjang.png"class="dropdown-content-img"></a>
+              <a href="#"><img src="Belanja.png"class="dropdown-content-img"></a>
+              <a href="Login.html"><img src="LogOut.png" class="dropdown-content-img"></a>
+            </div>
+          </div>
+          <div class="ProBtn">
+            <button class="dropbtn"><img src="Profil.jpg" class="dropdown-img"></button>
+          </div>          
+    </div>
+
+    <div class="Kotak2">
+      <div class="terbaru">TERBARU</div>
+      <div class="kotak3">
+        <div class="kotakHeader2">
+          Nama Akun
+          <button class="like-btn" onclick="toggleLike(this)">
+            <span class="like-icon"></span>
+            <span class="like-count">0</span>
+          </button>
+        </div>
+        <div class="kotakdalam"><img src="random.png"></div>
+        <div style="font-size: 18px;">Deskripsi</div>
+      </div>
+      
+      <div class="kotak3">
+        <div class="kotakHeader2">
+          Nama Akun
+          <button class="like-btn" onclick="toggleLike(this)">
+            <span class="like-icon"></span>
+            <span class="like-count">0</span>
+          </button>
+        </div>
+        <div class="kotakdalam"><img src="random.png"></div>
+        <div style="font-size: 18px;">Deskripsi</div>
+      </div>
+    </div>
+    
+    <div class="kotakTren">
+    <div class="trending">TRENDING</div>
+      <div class="kotak3">
+      <div class="kotakHeaderTren">
+        Nama Akun
+        <button class="like-btn" onclick="toggleLike(this)">
+          <span class="like-icon"></span>
+          <span class="like-count">0</span>
+        </button>
+      </div>
+      <div class="kotakdalam"><img src="random.png"></div>
+      <div style="font-size: 18px;">Deskripsi</div>
+    </div>
+  </div>
+      
+    <script src="like.js"></script>
+</body>
